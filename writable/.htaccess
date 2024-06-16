@@ -1,0 +1,8 @@
+<IfModule authz_core_module>
+    # Untuk Apache 2.4 atau lebih baru
+    Require all granted
+</IfModule>
+<IfModule !authz_core_module>
+    # Untuk Apache sebelum versi 2.4
+    Allow from all
+</IfModule>
